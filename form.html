@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res_container.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="form-heading">Registration Form</h1>
+        <form action="" method="post" class="form">
+            <label for="first name" form_group-label>First name:</label>
+            <div class="form_group" >
+                <input type="text" 
+                       name="first_name" 
+                       class="first_name" 
+                       id="first_name" 
+                       placeholder="first name"
+                       required
+                       />
+            </div>
+    
+            <div class="form_group">
+                <label for="last name" form_group-label>Last name:</label>
+                <input type="text" 
+                       name="last_name" 
+                       class="last_name" 
+                       id="last_name" 
+                       placeholder="last name"
+                       required
+                       />
+            </div>
+    
+            <div class="form_group">
+                <label for="email" form_group-label>Email Address:</label>
+                <input type="email" 
+                       name="email" 
+                       class="email" 
+                       id="email" 
+                       placeholder="Email address"
+                       required
+                       />
+            </div>
+    
+            <div class="form_group">
+                <label for="phone" forrm_group_label >Phone Number:</label>
+                <input type="tel" 
+                       name="phone" 
+                       class="phone" 
+                       id="phone" 
+                       placeholder="phone number"
+                       required
+                       />
+                    </div>
+            <div class="form_group">
+                <label for="gender" form_group-label>Gender</label>
+               <select name="gender" required>
+                   <option value="male">Male</option>
+                   <option value="female">Female</option>
+                   <option value="not_to_say">Prefer not to say</option>
+               </select>
+            </div>
+
+            <div class="form_group">
+                <button class="btn-submit">Submit</button>
+            </div>
+
+        </form>
+    </main>
+    
+</body>
+</html>

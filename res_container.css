@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Rock+Salt&display=swap');
+
+:root {
+    --custom-color : rgb(87, 81, 81);
+    --padding : 20px;
+    --medium-font-size: 1.2em;
+    --big-font-size: 2.5em;
+    --input-padding: 15px 25px;
+    --border-radius: 8px;
+    --margin-top: 20px;
+    --margin-bottom: 10px;
+    --border: 1px solid rgb(197, 212, 221);
+    --misc-color: steelblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.container {
+    width: 1500px;
+    max-width: 100%;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.form-heading{
+    text-align: center;
+    color: var(--misc-color);
+    margin-top: var(--margin-top);
+    padding: var(--padding);
+    
+}
+
+.form{
+    width: 60%;
+    margin: 30px auto;
+    padding: var(--padding);
+}
+
+.form_group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-top);
+    margin-bottom: var(--margin-bottom);
+}
+
+.form_group-label {
+    color: var(--custom-color);
+    font-size: var(--medium-font-size);
+    margin-bottom: var(--margin-bottom);
+}
+
+input {
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-bottom);
+    border: var(--border);
+}
+
+input:placeholder {
+    font-size: medium;
+}
+
+
+select {
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    border: var(--border);
+    color: var(--custom-color);
+    background-color: white;
+}
+
+.btn-submit{
+   margin-top: var(--margin-top);
+   border: none;
+   padding: 14px;
+   border-radius: var(--border-radius);
+   cursor: pointer;
+   background-color: var(--misc-color);
+   color: white;
+   font-size: var(--medium-font-size);
+   transition: 0.3s;
+}
+
+
+.btn-submit:hover {
+    background: rgb(44, 106, 156);
+}
+
+@media(max-width:840px) {
+    .form{
+        width: 100%;
+    }
+}
